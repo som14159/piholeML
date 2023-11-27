@@ -1,4 +1,4 @@
-# MLpihole
+#piholeML
 
 **An extension of Pi-hole with Machine Learning Features.**
 
@@ -33,6 +33,15 @@ To integrate MLpihole with your Pi-hole installation, follow these steps:
    ```bash
    echo 'bash /MLpihole/predict.sh' >> gravity.sh
    ```
-   
+
+The ad-blocking model underlying MLpihole was trained by amalgamating popular ad-serving blocklists and non-ad domains, utilizing a Decision Tree Classifier. 
+
+The training data underwent meticulous text preprocessing, including punctuation removal and SymSpell word segmentation, to enhance model accuracy. 
+
+The resulting Decision Tree model, along with its supporting components such as the CountVectorizer, was serialized using joblib and integrated into MLpihole's Bash scripts. 
+
+These scripts, including predict.sh, leverage the serialized model to predict the ad-serving nature of domains in real-time within the Pi-hole environment. 
+
+
 
 
