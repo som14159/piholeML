@@ -31,7 +31,7 @@ To integrate MLpihole with your Pi-hole installation, follow these steps:
    
 3. **Update gravity.sh file to execute the Prediction Script:**
    ```bash
-   echo 'bash /etc/pihole/MLpihole/predict.sh' >> /etc/pihole/gravity.sh
+   echo 'bash /MLpihole/predict.sh' >> gravity.sh
    ```
    
 
