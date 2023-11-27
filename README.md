@@ -10,7 +10,7 @@ Since identifying ad domains can be seen as a pattern matching problem pi-holes 
 
 ## Installation
 
-To integrate MLpihole with your Pi-hole installation, follow these steps:
+To integrate piholeML with your Pi-hole installation, follow these steps:
 
 1. **Navigate to your Pi-hole directory:**
    
